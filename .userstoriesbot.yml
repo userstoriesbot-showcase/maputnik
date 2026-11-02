@@ -1,0 +1,12 @@
+# Showcase fork only (never part of an upstream pull request).
+# Vite serves the app under the /maputnik/ base path ("/" only redirects there); app.url takes no path, so readyPath carries it.
+version: 1
+app:
+  install: "npm ci"
+  start: npm start -- --port {port} --host 0.0.0.0
+  url: http://localhost:{port}
+  readyPath: /maputnik/
+  runtime: node22
+demo:
+  maxVideos: 1
+  beforePass: true

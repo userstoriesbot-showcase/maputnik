@@ -1,0 +1,19 @@
+{
+  "version": 8,
+  "name": "Style with the mbgljs renderer",
+  "metadata": {
+    "maputnik:renderer": "mbgljs"
+  },
+  "center": [0, 0],
+  "zoom": 1,
+  "sources": {},
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#d8e8f0"
+      }
+    }
+  ]
+}
