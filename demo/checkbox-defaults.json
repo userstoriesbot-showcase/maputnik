@@ -1,0 +1,145 @@
+{
+  "version": 8,
+  "name": "Checkbox defaults demo",
+  "metadata": {
+    "maputnik:renderer": "mlgljs"
+  },
+  "center": [
+    0,
+    0.0004
+  ],
+  "zoom": 15.6,
+  "pitch": 60,
+  "bearing": -20,
+  "sources": {
+    "buildings": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "height": 260
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    -0.003,
+                    -0.0012
+                  ],
+                  [
+                    -0.0014,
+                    -0.0012
+                  ],
+                  [
+                    -0.0014,
+                    0.0004000000000000002
+                  ],
+                  [
+                    -0.003,
+                    0.0004000000000000002
+                  ],
+                  [
+                    -0.003,
+                    -0.0012
+                  ]
+                ]
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "height": 420
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    -0.0008,
+                    -0.0008
+                  ],
+                  [
+                    0.0008,
+                    -0.0008
+                  ],
+                  [
+                    0.0008,
+                    0.0008
+                  ],
+                  [
+                    -0.0008,
+                    0.0008
+                  ],
+                  [
+                    -0.0008,
+                    -0.0008
+                  ]
+                ]
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "height": 320
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    0.0014,
+                    -0.0012
+                  ],
+                  [
+                    0.003,
+                    -0.0012
+                  ],
+                  [
+                    0.003,
+                    0.0004000000000000002
+                  ],
+                  [
+                    0.0014,
+                    0.0004000000000000002
+                  ],
+                  [
+                    0.0014,
+                    -0.0012
+                  ]
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#e8eef2"
+      }
+    },
+    {
+      "id": "buildings",
+      "type": "fill-extrusion",
+      "source": "buildings",
+      "paint": {
+        "fill-extrusion-color": "#f2b84b",
+        "fill-extrusion-height": [
+          "get",
+          "height"
+        ],
+        "fill-extrusion-base": 0
+      }
+    }
+  ]
+}
